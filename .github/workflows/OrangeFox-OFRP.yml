@@ -1,4 +1,4 @@
-name: Recovery Build
+name: OrangeFox [OFRP]
 
 on:
   workflow_dispatch:
@@ -14,15 +14,15 @@ on:
       DEVICE_TREE_URL:
         description: 'DEVICE_TREE_URL'
         required: true
-        default: 'https://github.com/kelexine/ofox_device_tecno_kelly'
+        default: 'https://github.com/r3nzph/android_device_tecno_TECNO-KJ5.git'
       DEVICE_TREE_BRANCH:
         description: 'DEVICE_TREE_BRANCH'
         required: true
-        default: 'ofox-11'
+        default: '13.5.0'
       DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
-        default: 'device/tecno/kelly'
+        default: 'device/tecno/KJ5'
       COMMON_TREE_URL:
         description: 'COMMON_TREE_URL (if no common tree, leave blank)'
         required: false
@@ -32,11 +32,11 @@ on:
       DEVICE_NAME:
         description: 'DEVICE_NAME'
         required: true
-        default: 'kelly'
+        default: 'KJ5'
       MAKEFILE_NAME:
         description: 'MAKEFILE_NAME'
         required: true
-        default: 'twrp_kelly'
+        default: 'twrp_KJ5'
       BUILD_TARGET:
         description: 'BUILD_TARGET'
         required: true
