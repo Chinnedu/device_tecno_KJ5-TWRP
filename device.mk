@@ -71,7 +71,7 @@ PRODUCT_PACKAGES += \
     mtk_plpath_utils.recovery
     
 PRODUCT_PACKAGES_DEBUG += \
-    update_engine_client
+    bootctrl
 
 # VNDK
 PRODUCT_TARGET_VNDK_VERSION := 31
