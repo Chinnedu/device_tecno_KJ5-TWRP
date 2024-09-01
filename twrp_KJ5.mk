@@ -31,10 +31,10 @@ $(call inherit-product, device/tecno/KJ5/device.mk)
 # Inherit some common TWRP stuff
 $(call inherit-product, vendor/twrp/config/common.mk)
 
-
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := KJ5
 PRODUCT_NAME := twrp_KJ5
 PRODUCT_BRAND := TECNO
 PRODUCT_MODEL := TECNO KJ5
 PRODUCT_MANUFACTURER := tecno
+PRODUCT_GMS_CLIENTID_BASE := android-tecno
