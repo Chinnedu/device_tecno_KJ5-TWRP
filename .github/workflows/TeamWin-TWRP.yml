@@ -1,4 +1,4 @@
-name: Recovery Build
+name: TeamWin [TWRP]
 
 on:
   workflow_dispatch:
