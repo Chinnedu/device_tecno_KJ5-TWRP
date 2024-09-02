@@ -174,7 +174,7 @@ TW_MTP_DEVICE := /dev/mtp_usb
 TW_INCLUDE_FASTBOOTD := true
 
 # Debug
-TWRP_EXCLUDE_LOGCAT := true
+TW_EXCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 
 # Props
