@@ -124,7 +124,6 @@ VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
 # TWRP Configuration
 TW_BACKUP_EXCLUSIONS := /Files/fonts
-TWRP_INCLUDE_LOGCAT := false
 TARGET_USES_LOGD := false
 TW_EXTRA_LANGUAGES := false
 TW_EXCLUDE_TOOLBOX := true
@@ -136,7 +135,6 @@ TW_Y_OFFSET := 115
 TW_H_OFFSET := -115
 
 # Tools / Resetprop and magiskboot
-TW_EXCLUDE_LOGCAT := true
 TW_EXCLUDE_BASH := true
 TW_EXCLUDE_TZDATA := true
 TW_INCLUDE_REPACKTOOLS := false
@@ -176,7 +174,7 @@ TW_MTP_DEVICE := /dev/mtp_usb
 TW_INCLUDE_FASTBOOTD := true
 
 # Debug
-TWRP_INCLUDE_LOGCAT := true
+TWRP_EXCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 
 # Props
