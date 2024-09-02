@@ -12,16 +12,39 @@ ALLOW_MISSING_DEPENDENCIES := true
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
+# System As Root
+BOARD_SUPPRESS_SECURE_ERASE := true
+BOARD_ROOT_EXTRA_FOLDERS += metadata
+
 # A/B
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS += \
-    product \
-    vbmeta_vendor \
+    system \
     system_ext \
     vendor \
-    system \
+    product \
     boot \
+    vbmeta_vendor \
     vbmeta_system
+
+# Architecture
+TARGET_ARCH := arm64
+TARGET_ARCH_VARIANT := armv8-a
+TARGET_CPU_ABI := arm64-v8a
+TARGET_CPU_ABI2 := 
+TARGET_CPU_VARIANT := generic
+TARGET_CPU_VARIANT_RUNTIME := cortex-a53
+
+TARGET_2ND_ARCH := arm
+TARGET_2ND_ARCH_VARIANT := armv7-a-neon
+TARGET_2ND_CPU_ABI := armeabi-v7a
+TARGET_2ND_CPU_ABI2 := armeabi
+TARGET_2ND_CPU_VARIANT := generic
+TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a53
+
+# Bootloader
+TARGET_BOOTLOADER_BOARD_NAME := KJ5
+TARGET_NO_BOOTLOADER := true
 
 # Kernel
 TARGET_NO_KERNEL := false
