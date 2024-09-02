@@ -127,7 +127,7 @@ TW_BACKUP_EXCLUSIONS := /Files/fonts
 TWRP_INCLUDE_LOGCAT := false
 TARGET_USES_LOGD := false
 TW_EXTRA_LANGUAGES := false
-TW_USE_TOOLBOX := true
+TW_EXCLUDE_TOOLBOX := true
 TWRP_NEW_THEME := true
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_EXCLUDE_APEX := true
@@ -136,6 +136,7 @@ TW_Y_OFFSET := 115
 TW_H_OFFSET := -115
 
 # Tools / Resetprop and magiskboot
+TW_EXCLUDE_LOGCAT := true
 TW_EXCLUDE_BASH := true
 TW_EXCLUDE_TZDATA := true
 TW_INCLUDE_REPACKTOOLS := false
